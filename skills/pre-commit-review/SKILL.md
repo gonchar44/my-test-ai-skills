@@ -25,3 +25,7 @@ Use lightweight local checks when they can substantiate a finding and fit the re
 Lead with actionable findings in severity order. For each finding, give the file and line when available, identify whether the issue is staged, unstaged, or untracked when that matters, explain what breaks and under what conditions, and recommend the smallest practical fix.
 
 If there are no actionable findings, say so within the scope reviewed. Briefly note any material gaps in coverage or verification.
+
+## Re-review after fixes
+
+When asked to re-review, refresh Git status and inspect the current diff. Verify which earlier findings were resolved and check the fixes for new regressions. If the review targets the next commit, flag any fixes that still need to be staged.
